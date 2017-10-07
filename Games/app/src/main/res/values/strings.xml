@@ -1,3 +1,36 @@
 <resources>
     <string name="app_name">Games</string>
+
+    <string name="hello"> 안드로이드 초보자가 만든 스도쿠 </string>
+    <string name="main_title">안드로이드 스도쿠 </string>
+    <string name="continue_label">Continue</string>
+    <string name="new_game_label">New Game</string>
+    <string name="about_label">About</string>
+    <string name="exit_label">앱 종료</string>
+    <string name="about_title">안드로의 스도쿠 </string>
+
+    <string name="settings_label">설정</string>
+    <string name="settings_title">게임 설정</string>
+    <string name="settings_shortcut">s</string>
+    <string name="hints_title">힌트</string>
+    <string name="hints_summary">힌트 보이기</string>
+    <string name="new_game_title">Difficulty</string>
+    <string name="easy_label">Easy</string>
+    <string name="medium_label">Medium</string>
+    <string name="hard_label">Hard</string>
+    <string name="game_title">게임</string>
+    <string name="no_moves_label">No moves</string>
+    <string name="keypad_title">키패드 </string>
+
+    <string name="num_0">0</string>
+    <string name="num_1">1</string>
+    <string name="num_2">2</string>
+    <string name="num_3">3</string>
+    <string name="num_4">4</string>
+    <string name="num_5">5</string>
+    <string name="num_6">6</string>
+    <string name="num_7">7</string>
+    <string name="num_8">8</string>
+    <string name="num_9">9</string>
+
 </resources>
