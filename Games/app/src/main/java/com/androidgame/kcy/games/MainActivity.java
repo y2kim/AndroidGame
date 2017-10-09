@@ -24,12 +24,33 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button continueButton =(Button)findViewById(R.id.continue_button);
+        continueButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+            }
+        });
         Button newButton = (Button) findViewById(R.id.new_button);
+        newButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+            }
+        });
         Button aboutButton =(Button) findViewById(R.id.about_button);
+        aboutButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+            }
+        });
         Button exitButton =(Button) findViewById(R.id.exit_button);
+        exitButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
     }
 }
