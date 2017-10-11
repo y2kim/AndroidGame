@@ -1,9 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/keypad"
+    android:orientation="vertical"
+    android:stretchColumns="*"
     tools:context="com.androidgame.kcy.games.Keypad">
 
-</android.support.constraint.ConstraintLayout>
+    <TableRow>
+
+        <Button
+            android:id="@+id/keypad_1"
+            android:text="@string/num_1" >
+        </Button>
+
+        <Button
+            android:id="@+id/keypad_2"
+            android:text="@string/num_2" >
+        </Button>
+
+        <Button
+            android:id="@+id/keypad_3"
+            android:text="@string/num_3" >
+        </Button>
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/keypad_4"
+            android:text="@string/num_4" >
+        </Button>
+
+        <Button
+            android:id="@+id/keypad_5"
+            android:text="@string/num_5" >
+        </Button>
+
+        <Button
+            android:id="@+id/keypad_6"
+            android:text="@string/num_6" >
+        </Button>
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/keypad_7"
+            android:text="@string/num_7" >
+        </Button>
+
+        <Button
+            android:id="@+id/keypad_8"
+            android:text="@string/num_8" >
+        </Button>
+
+        <Button
+            android:id="@+id/keypad_9"
+            android:text="@string/num_9" >
+        </Button>
+    </TableRow>
+
+</TableLayout>
