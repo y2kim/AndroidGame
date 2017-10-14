@@ -27,16 +27,18 @@ public class MainActivity extends AppCompatActivity {
         continueButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startGame(Game.DIFFICULTY_CONTINUE);
             }
         });
+
         Button newButton = (Button) findViewById(R.id.new_button);
         newButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                openNewGameDialog();
             }
         });
+
         Button aboutButton =(Button) findViewById(R.id.about_button);
         aboutButton.setOnClickListener(new OnClickListener() {
             @Override
@@ -44,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
         Button exitButton =(Button) findViewById(R.id.exit_button);
         exitButton.setOnClickListener(new OnClickListener() {
             @Override
@@ -52,5 +55,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void startGame(int i) {
+        Log.d(TAG, "clicked on " + i);
+        Intent intent = new Intent(this, Game.class);
+        intent.putExtra(Game.KEY_DIFFICULTY, i);
+        startActivity(intent);
+    }
+
+    private void openNewGameDialog() {
+        new AlertDialog.Builder(this)
+                .setTitle(R.string.new_game_title)
+                .setItems(R.array.difficulty,
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(
+                                    DialogInterface dialoginterface, int i) {
+                                startGame(i);
+                            }
+                        }).show();
     }
 }

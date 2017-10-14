@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Keypad"></activity>
+
+        <activity android:label="@string/settings_title" android:name=".Prefs"></activity>
+        <activity android:label="@string/game_title" android:name=".Game"></activity>
     </application>
 
 </manifest>

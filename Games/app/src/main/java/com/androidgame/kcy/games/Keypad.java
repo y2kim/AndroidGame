@@ -54,7 +54,7 @@ public class Keypad extends Dialog {
     }
 
     private void returnResult(int tile) {
-      //  puzzleView.setSelectedTile(tile);
+        puzzleView.setSelectedTile(tile);
         dismiss();
     }
 

@@ -145,8 +145,8 @@ public class Game extends Activity{
             toast.show();
         } else {
             Log.d(TAG, "showKeypad: used=" + toPuzzleString(tiles));
-          //  Dialog v = new Keypad(this, tiles, puzzleView);
-          //  v.show();
+            Dialog v = new Keypad(this, tiles, puzzleView);
+            v.show();
         }
     }
 
